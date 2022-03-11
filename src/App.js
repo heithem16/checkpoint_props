@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Profile from './component/Profile';
 
 function App() {
+  //let aboutMe={firstName:"Heithem", lastName:"HELALI", bio:"doctor",proffession:"doctor"};
+  let firstName="Heithem";
+  let lastName="HELALI";
+  let bio="My name is Heithem Helali, I have recently graduated with a PhD in Telecommunications.";
+  let proffession="Doctor in Telecommunications Engineering";
+  const handleName=(data)=>{alert(data)};
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      
+    
+    <Profile firstName={firstName} lastName={lastName} bio={bio} proffession={proffession} handleName={handleName}/>
     </div>
   );
 }
